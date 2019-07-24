@@ -1,5 +1,5 @@
 {
-  "name": "cerberus-email",
+  "name": "mojo-email",
   "description": "A few simple, but solid patterns for responsive HTML email templates and newsletters. Even in Outlook and Gmail.",
   "version": "3.2.0",
   "keywords": [
@@ -19,9 +19,25 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/TedGoas/Cerberus.git"
+    "url": "git+https://github.com/TedGoas/Cerberus.git"
   },
   "bugs": {
     "url": "https://github.com/TedGoas/Cerberus/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss-preset-env": "^6.7.0"
   }
 }
