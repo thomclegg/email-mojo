@@ -143,6 +143,11 @@
                 min-width: 414px !important;
             }
         }
+
+        @media only screen and (min-device-width: 680px) {
+
+        }
+
     </style>
 
     <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
@@ -207,7 +212,13 @@
             .email-container p {
                 font-size: 17px !important;
             }
+
+            .single-break {
+                padding: 0;
+            }
         }
+
+   
     </style>
     <!-- Progressive Enhancements : END -->
 
@@ -219,7 +230,7 @@
 	3. mso conditional: For Windows 10 Mail
 -->
 
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #eeeeee;">
+<body width="100%" style="margin: 0; padding: 10% 0 0 0 !important; mso-line-height-rule: exactly; background-color: #eeeeee;">
     <center style="width: 100%; background-color: #eeeeee;">
         <!--[if mso | IE]>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;">
@@ -262,14 +273,47 @@
             <!-- Email Body : BEGIN -->
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
                 <!-- Email Header : BEGIN -->
-                <tr>
+                <!-- <tr>
                     <td style="padding: 36px 0; text-align: center; height: 64px;">
                     </td>
-                </tr>
+                </tr> -->
                 <!-- Email Header : END -->
 
-                <!-- Hero Image, Flush : BEGIN -->
+                <!-- Logo & Button header : BEGIN -->
                 <tr>
+                    <td style="background-color: #006af0;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 36px">
+                                    <img src="./img/logo.png" alt="Mojo mortgages logo" width="100">
+                                    <a href="http://www.mojomortgages.com" target="_blank">
+                                        <img src="./img/account-button.png" alt="go to account button" width="180" style="float: right" >
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Logo & button : END -->
+
+                <!-- Email title : BEGIN -->
+                <tr>
+                <td style="background-color: #006af0;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td style="padding: 36px 36px 0">
+                                <h3 style="color: #ffffff; letter-spacing: 0.2px;">A reminder:</h3>
+                                <h1 style="color: #ffffff; font-size: 32px; font-weight: 500; width: 70%; margin-top: 0;">You have a mortgage appointment booked</h1>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                </tr>
+                <!-- Email title : END -->
+
+
+                <!-- Hero Image, Flush : BEGIN -->
+                <!-- <tr>
                     <td style="background-color: #ffffff;">
                         <a href="http://www.mojomortgages.com" target="_blank">
                             <img src="./img/header.png" width="680" height="" alt="alt_text" border="0"
@@ -277,7 +321,7 @@
                                 class="g-img">
                         </a>
                     </td>
-                </tr>
+                </tr> -->
                 <!-- Hero Image, Flush : END -->
 
                 <!-- 1 Column Text + Button : BEGIN -->
@@ -343,7 +387,7 @@
                         <tr>
                         <td valign="top" width="220" style="width: 220px;">
                         <![endif]-->
-                        <div style="display:inline-block; margin: 0 -1px; max-width: 280px; min-width:120px; vertical-align:top; width:100%;"
+                        <div style="display:inline-block; margin: 0 -1px; max-width: 50%; min-width:120px; vertical-align:top;"
                             class="stack-column">
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
@@ -359,7 +403,7 @@
                         </td>
                         <td valign="top" width="440" style="width: 440px;">
                         <![endif]-->
-                        <div style="display:inline-block; margin: 0 -1px; max-width: 280px; min-width:120px; vertical-align:top; padding-left: 52px;"
+                        <div style="display:inline-block; margin: 0 -1px; max-width: 45%; min-width:120px; vertical-align:top; padding-left: 5%;"
                             class="stack-column">
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
@@ -407,8 +451,8 @@
                         <tr>
                         <td valign="top" width="220" style="width: 220px;">
                         <![endif]-->
-                        <div style="display:inline-block; margin: 0 -1px; max-width: 280px; min-width:120px; vertical-align:top; width:100%;"
-                            class="stack-column">
+                        <div style="display:inline-block; margin: 0 -1px; max-width: 50%; min-width:120px; vertical-align:top; width:100%;"
+                            class="stack-column single-break">
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
                                     <td dir="ltr">
@@ -423,7 +467,7 @@
                         </td>
                         <td valign="top" width="440" style="width: 440px;">
                         <![endif]-->
-                        <div style="display:inline-block; max-width: 54%; min-width:120px; vertical-align:top;"
+                        <div style="display:inline-block; max-width: 50%; min-width:120px; vertical-align:top;"
                             class="stack-column">
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
@@ -493,7 +537,7 @@
                                         <td dir="ltr"
                                             style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
                                             class="center-on-narrow">
-                                            <h3 style="text-align: left; margin: 0; line-height: 2;">
+                                            <h3 style="margin: 0; line-height: 2;">
                                                 THUR
                                             </h3>
                                             <h1 style="font-size: 46px;  font-weight: 400; margin: 0; padding:0; ">12
@@ -512,7 +556,7 @@
                                             style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
                                             class="center-on-narrow">
                                             <h3
-                                                style="text-align: left; margin: 0 0 6px 0; color: #555555; letter-spacing: 0; ">
+                                                style="margin: 0 0 6px 0; color: #555555; letter-spacing: 0; ">
                                                 Your appointment is booked for:
                                             </h3>
                                             <h1
@@ -582,7 +626,7 @@
                                             style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
                                             class="center-on-narrow">
                                             <h3
-                                                style="text-align: left; margin: 0 0 6px 0; color: #555555; letter-spacing: 0; ">
+                                                style="margin: 0 0 6px 0; color: #555555; letter-spacing: 0; ">
                                                 Your advisor's details:
                                             </h3>
                                             <h1
@@ -625,45 +669,46 @@
                         background-color: aliceblue;
                         max-width: 100%;
                         border-radius: 10px;">
+                        
                             <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%; float: right;"
                                 class="stack-column">
                                 <!-- Button : BEGIN -->
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                     <tr>
-                                        <td dir="ltr">
-
-                                    <tr>
-                                        <td class="button-td button-td-primary" style="border-radius: 4px; ">
-                                            <a class="button-a button-a-primary" href="https://google.com/"
-                                                style="background: #ffffff; border: 1px solid #006af0; font-family: sans-serif; font-size: 16px; line-height: 15px; 
-                                                text-decoration: none; text-align: center; padding: 16px 32px; color: #006af0; display: block; border-radius: 10px;">
-                                                Reschedule here</a>
+                                        <td dir="rtl">
+                                            <tr>
+                                                <td class="button-td button-td-primary" style="border-radius: 4px; ">
+                                                    <a class="button-a button-a-primary" href="https://google.com/"
+                                                        style="background: #ffffff; border: 1px solid #006af0; font-family: sans-serif; font-size: 16px; line-height: 15px; 
+                                                        text-decoration: none; text-align: center; padding: 16px 32px; color: #006af0; display: block; border-radius: 10px;">
+                                                        Reschedule here</a>
+                                                </td>
+                                            </tr>
+                                        <!-- Button : END -->
                                         </td>
                                     </tr>
-                                    <!-- Button : END -->
-                    </td>
-                </tr>
-            </table>
-        </div>
+                                </table>
+                            </div>
+
+                            <div style="display:inline-block; margin: 0 -1px; max-width: 260px; min-width:120px; vertical-align:top;"
+                            class="stack-column">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr"
+                                            style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left;"
+                                            class="center-on-narrow">
+                                            <h2 style="font-family: sans-serif; font-size: 18px; color: #333333; font-weight: 400;">
+                                                Can't make your appointment?
+                                            </h2>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
         <!--[if mso]>
                         </td>
                         <td valign="top" width="440" style="width: 440px;">
                         <![endif]-->
-        <div style="display:inline-block; margin: 0 -1px; max-width: 260px; min-width:120px; vertical-align:top;"
-            class="stack-column">
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                <tr>
-                    <td dir="ltr"
-                        style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left;"
-                        class="center-on-narrow">
-                        <h2 style="font-family: sans-serif; font-size: 18px; color: #333333; font-weight: 400;">
-                            Can't make your appointment?
-                        </h2>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        </div>
+                        </div>
         <!--[if mso]>
             </td>
             </tr>
