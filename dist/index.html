@@ -172,8 +172,7 @@
 
         .button-td-primary:hover,
         .button-a-primary:hover {
-            background: #19237e !important;
-            border-color: #19237e !important;
+            opacity: 0.8 !important;
         }
 
         /* Media Queries */
@@ -224,10 +223,21 @@
                 margin-bottom: 12px !important;
             }
 
+            .full-width {
+                width: 100% !important;
+            }
+
+            .button-td,
+            .button-a 
+
+          
+
+
 
             /* What it does: Adjust typography on small screens to improve readability */
             .email-container p {
                 font-size: 17px !important;
+                line-height: 1.4;
             }
 
             .single-break {
@@ -320,7 +330,7 @@
                         <tr>
                             <td style="padding: 36px 36px 0">
                                 <h3 style="color: #ffffff; letter-spacing: 0.2px;">A reminder:</h3>
-                                <h1 style="color: #ffffff; font-size: 32px; font-weight: 500; width: 70%; margin-top: 0;">You have a mortgage appointment booked</h1>
+                                <h1  class="full-width" style="color: #ffffff; font-size: 32px; font-weight: 500; width: 70%; margin-top: 0;">You have a mortgage appointment booked</h1>
                             </td>
                         </tr>
                     </table>
@@ -685,7 +695,23 @@
                         padding: 24px 32px;
                         background-color: aliceblue;
                         max-width: 100%;
-                        border-radius: 10px;">
+                        border-radius: 10px;
+                        overflow: hidden;">
+
+                            <div style="display:inline-block; margin: 0 -1px; max-width: 260px; min-width:120px; vertical-align:top;"
+                            class="stack-column">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td dir="ltr"
+                                            style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left;"
+                                            class="center-on-narrow">
+                                            <h2 style="font-family: sans-serif; font-size: 18px; color: #333333; font-weight: 400;">
+                                                Can't make your appointment?
+                                            </h2>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         
                             <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%; float: right;"
                                 class="stack-column">
@@ -707,20 +733,7 @@
                                 </table>
                             </div>
 
-                            <div style="display:inline-block; margin: 0 -1px; max-width: 260px; min-width:120px; vertical-align:top;"
-                            class="stack-column">
-                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                                    <tr>
-                                        <td dir="ltr"
-                                            style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left;"
-                                            class="center-on-narrow">
-                                            <h2 style="font-family: sans-serif; font-size: 18px; color: #333333; font-weight: 400;">
-                                                Can't make your appointment?
-                                            </h2>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
+                         
         <!--[if mso]>
                         </td>
                         <td valign="top" width="440" style="width: 440px;">
@@ -788,8 +801,7 @@
                             <h2 style="color: #ffffff; text-align: center; margin: 0 0 36px 0;">Invite a friend and earn
                                 £100
                             </h2>
-                            <p
-                                style="color: #ffffff; font-size: 14px; text-align: center; width: 60%; margin: 0 auto 36px;">
+                            <p style="color: #ffffff; font-size: 14px; text-align: center; width: 60%; margin: 0 auto 36px;" class="full-width">
                                 Copy your unique link below and share it with your friends. For each referral that
                                 results in a successful mortgage completion we’ll give each of you £100 cash as a big
                                 thank you.
@@ -826,12 +838,14 @@
             <td style="background-color: #19237e" height="100">
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
-                        <td style="padding: 36px; width: 100%; position: relative;">
+                        <td style="padding: 36px; width: 100%;">
                             <a href="http://www.mojomortgages.com/blog" target="_blank"
-                                style="color: #ffffff; font-size: 14px; text-decoration: underline; position: absolute; top: 50%; transform: translateY(-50%)">Read
+                                class="footer-link"
+                                style="color: #ffffff; font-size: 14px; text-decoration: underline; margin-right: 5%; height: 20px; padding: 10px 0; display: inline-block;">Read
                                 our blog</a>
                             <a href="http://www.mojomortgages.com/faq" target="_blank"
-                                style="color: #ffffff; font-size: 14px; text-decoration: underline; position: absolute; top: 50%; left: 25%; transform: translateY(-50%)">Read
+                                class="footer-link"
+                                style="color: #ffffff; font-size: 14px; text-decoration: underline;">Read
                                 the FAQ</a>
                             <div
                                 style="background-color: #ffffff; width: 36px; height: 36px; float: right; border-radius: 50%; text-align: center;">
