@@ -144,10 +144,7 @@
             }
         }
 
-        @media only screen and (min-device-width: 680px) {
-
-        }
-
+        @media only screen and (min-device-width: 680px) {}
     </style>
 
     <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
@@ -210,7 +207,7 @@
             img.center-on-narrow {
                 margin-bottom: 32px;
             }
-            
+
             td.img-caption {
                 padding-left: 5%;
             }
@@ -228,11 +225,7 @@
             }
 
             .button-td,
-            .button-a 
-
-          
-
-
+            .button-a
 
             /* What it does: Adjust typography on small screens to improve readability */
             .email-container p {
@@ -244,8 +237,6 @@
                 padding: 0;
             }
         }
-
-   
     </style>
     <!-- Progressive Enhancements : END -->
 
@@ -257,7 +248,8 @@
 	3. mso conditional: For Windows 10 Mail
 -->
 
-<body width="100%" style="margin: 0; padding: 10% 0 0 0 !important; mso-line-height-rule: exactly; background-color: #eeeeee;">
+<body width="100%"
+    style="margin: 0; padding: 10% 0 0 0 !important; mso-line-height-rule: exactly; background-color: #eeeeee;">
     <center style="width: 100%; background-color: #eeeeee;">
         <!--[if mso | IE]>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;">
@@ -314,7 +306,8 @@
                                 <td style="padding: 36px">
                                     <img src="./img/logo.png" alt="Mojo mortgages logo" width="100">
                                     <a href="http://www.mojomortgages.com" target="_blank">
-                                        <img src="./img/account-button.png" alt="go to account button" width="180" style="float: right" >
+                                        <img src="./img/account-button.png" alt="go to account button" width="180"
+                                            style="float: right">
                                     </a>
                                 </td>
                             </tr>
@@ -325,16 +318,18 @@
 
                 <!-- Email title : BEGIN -->
                 <tr>
-                <td style="background-color: #006af0;">
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                            <td style="padding: 36px 36px 0">
-                                <h3 style="color: #ffffff; letter-spacing: 0.2px;">A reminder:</h3>
-                                <h1  class="full-width" style="color: #ffffff; font-size: 32px; font-weight: 500; width: 70%; margin-top: 0;">You have a mortgage appointment booked</h1>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
+                    <td style="background-color: #006af0;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 36px 36px 0">
+                                    <h3 style="color: #ffffff; letter-spacing: 0.2px;">A reminder:</h3>
+                                    <h1 class="full-width"
+                                        style="color: #ffffff; font-size: 32px; font-weight: 500; width: 70%; margin-top: 0;">
+                                        You have a mortgage appointment booked</h1>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
                 </tr>
                 <!-- Email title : END -->
 
@@ -434,9 +429,11 @@
                             class="stack-column">
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
-                                    <td dir="ltr" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left;"
+                                    <td dir="ltr"
+                                        style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left;"
                                         class="center-on-narrow">
-                                        <h1 style="margin: 0 0 10px 0; font-family: sans-serif; line-height: 1.2; color: #333333; font-weight: 700;">
+                                        <h1
+                                            style="margin: 0 0 10px 0; font-family: sans-serif; line-height: 1.2; color: #333333; font-weight: 700;">
                                             Class aptent taciti sociosqu
                                         </h1>
                                         <p style="margin: 0 0 18px 0;">Maecenas sed ante pellentesque, posuere leo id,
@@ -498,12 +495,15 @@
                             class="stack-column">
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
-                                    <td dir="rtl" style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left;"
+                                    <td dir="rtl"
+                                        style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left;"
                                         class="center-on-narrow img-caption">
-                                        <h1 style="margin: 0 0 10px 0; font-family: sans-serif; line-height: 1.2; color: #333333; font-weight: 700;">
+                                        <h1
+                                            style="margin: 0 0 10px 0; font-family: sans-serif; line-height: 1.2; color: #333333; font-weight: 700;">
                                             Class aptent taciti sociosqu
                                         </h1>
-                                        <p style="margin: 0 0 18px 0; padding-right: 36px;">Maecenas sed ante pellentesque, posuere leo id,
+                                        <p style="margin: 0 0 18px 0; padding-right: 36px;">Maecenas sed ante
+                                            pellentesque, posuere leo id,
                                             eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia
                                             nostra, per inceptos himenaeos.</p>
                                         <!-- Button : BEGIN -->
@@ -532,7 +532,202 @@
                 </tr>
                 <!-- Thumbnail Right, Text Left : END -->
 
-                
+
+                <!-- Step 1 : BEGIN -->
+                <tr>
+                    <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+                    <td dir="ltr" height="100%" valign="top" width="100%"
+                        style="font-size:0; padding: 0 36px; text-align: left; background-color: #ffffff">
+                        <!--[if mso]>
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                        <tr>
+                        <td valign="top" width="220" style="width: 220px;">
+                        <![endif]-->
+
+                        <!-- inset div styling -->
+                        <div style=" display: block;
+                        padding: 24px 32px;
+                        background-color: #ffffff;
+                        max-width: 100%;
+                        ">
+                            <!--[if mso]>
+                                </td>
+                                <td valign="top" width="440" style="width: 440px;">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; max-width: 120px; min-width: 80px; vertical-align:top;"
+                                class="stack-column bttm-sml">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                    margin="0">
+                                    <tr>
+                                        <td dir="ltr"
+                                            style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
+                                            class="center-on-narrow">
+                                            <img src="./img/one.png" alt="step one" width="88">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div style="display:inline-block; margin: 0 -1px; max-width: 420px; min-width:120px; vertical-align:top;"
+                                class="stack-column appt">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                    margin="0">
+                                    <tr>
+                                        <td dir="ltr"
+                                            style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
+                                            class="center-on-narrow">
+
+                                            <h2 style="font-weight: 500; margin: 0 0 6px 0; padding:0; line-height: 1.4;">
+                                                Find your new dream house
+                                            </h2>
+                                            <p style="margin: 0 0 6px 0; color: #555555; letter-spacing: 0; line-height: 1.6;">
+                                                On average you’ll view 6 before you make an offer on the perfect one
+                                            </p>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+                <!-- Step 1 : END -->
+
+                  <!-- Step 2 : BEGIN -->
+                  <tr>
+                    <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+                    <td dir="ltr" height="100%" valign="top" width="100%"
+                        style="font-size:0; padding: 0 36px; text-align: left; background-color: #ffffff">
+                        <!--[if mso]>
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                        <tr>
+                        <td valign="top" width="220" style="width: 220px;">
+                        <![endif]-->
+
+                        <!-- inset div styling -->
+                        <div style=" display: block;
+                        padding: 24px 32px;
+                        background-color: #ffffff;
+                        max-width: 100%;
+                        ">
+                            <!--[if mso]>
+                                </td>
+                                <td valign="top" width="440" style="width: 440px;">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; max-width: 120px; min-width: 80px; vertical-align:top;"
+                                class="stack-column bttm-sml">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                    margin="0">
+                                    <tr>
+                                        <td dir="ltr"
+                                            style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
+                                            class="center-on-narrow">
+                                            <img src="./img/two.png" alt="step two" width="88">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div style="display:inline-block; margin: 0 -1px; max-width: 420px; min-width:120px; vertical-align:top;"
+                                class="stack-column appt">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                    margin="0">
+                                    <tr>
+                                        <td dir="ltr"
+                                            style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
+                                            class="center-on-narrow">
+
+                                            <h2 style="font-weight: 500; margin: 0 0 6px 0; padding:0; line-height: 1.4;">
+                                                Update Mojo and get new, exact matches
+                                            </h2>
+                                            <p style="margin: 0 0 6px 0; color: #555555; letter-spacing: 0; line-height: 1.6;">
+                                                Search 90 lenders to know exactly how much you can borrow or save
+                                            </p>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+                <!-- Step 2 : END -->
+
+                <!-- Step 3 : BEGIN -->
+                <tr>
+                    <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+                    <td dir="ltr" height="100%" valign="top" width="100%"
+                        style="font-size:0; padding: 0 36px; text-align: left; background-color: #ffffff">
+                        <!--[if mso]>
+                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                        <tr>
+                        <td valign="top" width="220" style="width: 220px;">
+                        <![endif]-->
+
+                        <!-- inset div styling -->
+                        <div style=" display: block;
+                        padding: 24px 32px;
+                        background-color: #ffffff;
+                        max-width: 100%;
+                        ">
+                            <!--[if mso]>
+                                </td>
+                                <td valign="top" width="440" style="width: 440px;">
+                            <![endif]-->
+                            <div style="display:inline-block; margin: 0; max-width: 120px; min-width: 80px; vertical-align:top;"
+                                class="stack-column bttm-sml">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                    margin="0">
+                                    <tr>
+                                        <td dir="ltr"
+                                            style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
+                                            class="center-on-narrow">
+                                            <img src="./img/three.png" alt="step two" width="88">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div style="display:inline-block; margin: 0 -1px; max-width: 420px; min-width:120px; vertical-align:top;"
+                                class="stack-column appt">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                    margin="0">
+                                    <tr>
+                                        <td dir="ltr"
+                                            style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
+                                            class="center-on-narrow">
+
+                                            <h2 style="font-weight: 500; margin: 0 0 6px 0; padding:0; line-height: 1.4;">
+                                                Book a call - whatever time suits
+                                            </h2>
+                                            <p style="margin: 0 0 6px 0; color: #555555; letter-spacing: 0; line-height: 1.6; ">
+                                                Get expert answers to your questions, then let us manage your application for FREE, saving you £500
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+                <!-- Step 3 : END -->
+
+
 
                 <!-- Appointment time : BEGIN -->
                 <tr>
@@ -582,8 +777,7 @@
                                         <td dir="ltr"
                                             style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
                                             class="center-on-narrow">
-                                            <h3
-                                                style="margin: 0 0 6px 0; color: #555555; letter-spacing: 0; ">
+                                            <h3 style="margin: 0 0 6px 0; color: #555555; letter-spacing: 0; ">
                                                 Your appointment is booked for:
                                             </h3>
                                             <h1
@@ -652,8 +846,7 @@
                                         <td dir="ltr"
                                             style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
                                             class="center-on-narrow">
-                                            <h3
-                                                style="margin: 0 0 6px 0; color: #555555; letter-spacing: 0; ">
+                                            <h3 style="margin: 0 0 6px 0; color: #555555; letter-spacing: 0; ">
                                                 Your advisor's details:
                                             </h3>
                                             <h1
@@ -699,46 +892,47 @@
                         overflow: hidden;">
 
                             <div style="display:inline-block; margin: 0 -1px; max-width: 260px; min-width:120px; vertical-align:top;"
-                            class="stack-column">
+                                class="stack-column">
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                     <tr>
                                         <td dir="ltr"
                                             style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left;"
                                             class="center-on-narrow">
-                                            <h2 style="font-family: sans-serif; font-size: 18px; color: #333333; font-weight: 400;">
+                                            <h2
+                                                style="font-family: sans-serif; font-size: 18px; color: #333333; font-weight: 400;">
                                                 Can't make your appointment?
                                             </h2>
                                         </td>
                                     </tr>
                                 </table>
                             </div>
-                        
+
                             <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%; float: right;"
                                 class="stack-column">
                                 <!-- Button : BEGIN -->
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                     <tr>
                                         <td dir="rtl">
-                                            <tr>
-                                                <td class="button-td button-td-primary" style="border-radius: 4px; ">
-                                                    <a class="button-a button-a-primary" href="https://google.com/"
-                                                        style="background: #ffffff; border: 1px solid #006af0; font-family: sans-serif; font-size: 16px; line-height: 15px; 
+                                    <tr>
+                                        <td class="button-td button-td-primary" style="border-radius: 4px; ">
+                                            <a class="button-a button-a-primary" href="https://google.com/"
+                                                style="background: #ffffff; border: 1px solid #006af0; font-family: sans-serif; font-size: 16px; line-height: 15px; 
                                                         text-decoration: none; text-align: center; padding: 16px 32px; color: #006af0; display: block; border-radius: 10px;">
-                                                        Reschedule here</a>
-                                                </td>
-                                            </tr>
-                                        <!-- Button : END -->
+                                                Reschedule here</a>
                                         </td>
                                     </tr>
-                                </table>
-                            </div>
+                                    <!-- Button : END -->
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-                         
+
         <!--[if mso]>
                         </td>
                         <td valign="top" width="440" style="width: 440px;">
                         <![endif]-->
-                        </div>
+        </div>
         <!--[if mso]>
             </td>
             </tr>
@@ -801,7 +995,8 @@
                             <h2 style="color: #ffffff; text-align: center; margin: 0 0 36px 0;">Invite a friend and earn
                                 £100
                             </h2>
-                            <p style="color: #ffffff; font-size: 14px; text-align: center; width: 60%; margin: 0 auto 36px;" class="full-width">
+                            <p style="color: #ffffff; font-size: 14px; text-align: center; width: 60%; margin: 0 auto 36px;"
+                                class="full-width">
                                 Copy your unique link below and share it with your friends. For each referral that
                                 results in a successful mortgage completion we’ll give each of you £100 cash as a big
                                 thank you.
@@ -839,12 +1034,10 @@
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
                         <td style="padding: 36px; width: 100%;">
-                            <a href="http://www.mojomortgages.com/blog" target="_blank"
-                                class="footer-link"
+                            <a href="http://www.mojomortgages.com/blog" target="_blank" class="footer-link"
                                 style="color: #ffffff; font-size: 14px; text-decoration: underline; margin-right: 5%; height: 20px; padding: 10px 0; display: inline-block;">Read
                                 our blog</a>
-                            <a href="http://www.mojomortgages.com/faq" target="_blank"
-                                class="footer-link"
+                            <a href="http://www.mojomortgages.com/faq" target="_blank" class="footer-link"
                                 style="color: #ffffff; font-size: 14px; text-decoration: underline;">Read
                                 the FAQ</a>
                             <div
@@ -868,15 +1061,16 @@
         <!-- Email Body : END -->
 
         <!-- Email Footer : BEGIN -->
-        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="70%" align="left" 
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="70%" align="left"
             style="max-width: 680px; margin: 0;">
             <tr>
-                <td style="padding: 36px 0; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: left; color: #888888;">
+                <td
+                    style="padding: 36px 0; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: left; color: #888888;">
                     <img src="./img/trust-pilot.png" alt="5 star trust pilot score" width="140"><br><br>
                     <webversion style="color: #cccccc; text-decoration: underline; font-weight: bold;">View as a Web
                         Page</webversion>
                     <br><br>
-                    <span class="unstyle-auto-detected-links" >Mojo Mortgages is a trading style of Life’s Great Limited
+                    <span class="unstyle-auto-detected-links">Mojo Mortgages is a trading style of Life’s Great Limited
                         which is registered in England and Wales (06246376) and is authorised and regulated by the
                         Financial Conduct Authority (FCA) and is on the Financial Services Register (478215).
                         <br><br>
