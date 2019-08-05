@@ -172,6 +172,8 @@
             opacity: 0.8 !important;
         }
 
+
+
         /* Media Queries */
 
 
@@ -236,12 +238,41 @@
             .single-break {
                 padding: 0;
             }
+
+            a.footer-link {
+                display: block !important;
+                width: 50%;
+            }
+
+            a.footer-link:nth-child(2) {
+                margin-bottom: 24px;
+            }
+
+            .social-container {
+                display: inline-block;
+                width: 80% !important;
+                float: none !important;
+            }
+
+            .social-container div {
+                margin-right: 16px !important;
+                float: none !important;
+                display: inline-block;
+            }
         }
 
         @media screen and (max-width: 320px) {
 
             .padding-xs {
                 padding: 16px !important;
+            }
+
+            .width-xs {
+                width: 50%;
+            }
+
+            .font-xs {
+                font-size: 1.8rem;
             }
         }
 
@@ -315,7 +346,7 @@
                                 <td class="padding-xs" style="padding: 36px;">
                                     <img src="./img/logo.png" alt="Mojo mortgages logo" width="100">
                                     <a href="http://www.mojomortgages.com" target="_blank">
-                                        <img src="./img/account-button.png" alt="go to account button" width="180"
+                                        <img src="./img/account-button.png" alt="go to account button" width="180" class="width-xs"
                                             style="float: right">
                                     </a>
                                 </td>
@@ -330,7 +361,7 @@
                     <td style="background-color: #006af0;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td style="padding: 36px 36px 0">
+                                <td style="padding: 36px 36px 0" class="padding-xs">
                                     <h3 style="color: #ffffff; letter-spacing: 0.2px;">A reminder:</h3>
                                     <h1 class="full-width"
                                         style="color: #ffffff; font-size: 32px; font-weight: 500; width: 70%; margin-top: 0;">
@@ -360,7 +391,7 @@
                     <td style="background-color: #ffffff;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tr>
-                                <td
+                                <td class="padding-xs"
                                     style="padding: 36px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
                                     <h1
                                         style="margin: 0 0 10px; font-size: 28px; line-height: 30px; color: #333333; font-weight: bold;">
@@ -411,7 +442,7 @@
                 <!-- Thumbnail Left, Text Right : BEGIN -->
                 <tr>
                     <!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
-                    <td dir="ltr" height="100%" valign="top" width="100%"
+                    <td dir="ltr" height="100%" valign="top" width="100%" class="padding-xs"
                         style="font-size:0; padding: 36px; background-color: #ffffff;">
                         <!--[if mso]>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
@@ -477,7 +508,7 @@
                 <!-- Thumbnail Right, Text Left : BEGIN -->
                 <tr>
                     <!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
-                    <td dir="rtl" height="100%" valign="top" width="100%"
+                    <td dir="rtl" height="100%" valign="top" width="100%" class="padding-xs"
                         style="font-size:0; padding: 36px; background-color: #ffffff;">
                         <!--[if mso]>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
@@ -545,7 +576,7 @@
                 <!-- Step 1 : BEGIN -->
                 <tr>
                     <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                    <td dir="ltr" height="100%" valign="top" width="100%"
+                    <td dir="ltr" height="100%" valign="top" width="100%" class="padding-xs"
                         style="font-size:0; padding: 0 36px; text-align: left; background-color: #ffffff">
                         <!--[if mso]>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
@@ -555,10 +586,11 @@
 
                         <!-- inset div styling -->
                         <div style=" display: block;
-                        padding: 24px 32px;
-                        background-color: #ffffff;
-                        max-width: 100%;
-                        ">
+                                    padding: 24px 32px;
+                                    background-color: #ffffff;
+                                    max-width: 100%;
+                                    " 
+                                    class="padding-xs">
                             <!--[if mso]>
                                 </td>
                                 <td valign="top" width="440" style="width: 440px;">
@@ -612,7 +644,7 @@
                 <!-- Step 2 : BEGIN -->
                 <tr>
                     <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                    <td dir="ltr" height="100%" valign="top" width="100%"
+                    <td dir="ltr" height="100%" valign="top" width="100%" class="padding-xs"
                         style="font-size:0; padding: 0 36px; text-align: left; background-color: #ffffff">
                         <!--[if mso]>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
@@ -625,7 +657,7 @@
                         padding: 24px 32px;
                         background-color: #ffffff;
                         max-width: 100%;
-                        ">
+                        " class="padding-xs">
                             <!--[if mso]>
                                 </td>
                                 <td valign="top" width="440" style="width: 440px;">
@@ -679,7 +711,7 @@
                 <!-- Step 3 : BEGIN -->
                 <tr>
                     <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                    <td dir="ltr" height="100%" valign="top" width="100%"
+                    <td dir="ltr" height="100%" valign="top" width="100%" class="padding-xs"
                         style="font-size:0; padding: 0 36px; text-align: left; background-color: #ffffff">
                         <!--[if mso]>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
@@ -692,7 +724,7 @@
                         padding: 24px 32px;
                         background-color: #ffffff;
                         max-width: 100%;
-                        ">
+                        " class="padding-xs">
                             <!--[if mso]>
                                 </td>
                                 <td valign="top" width="440" style="width: 440px;">
@@ -748,7 +780,7 @@
                 <!-- Appointment time : BEGIN -->
                 <tr>
                     <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                    <td dir="ltr" height="100%" valign="top" width="100%"
+                    <td dir="ltr" height="100%" valign="top" width="100%" class="padding-xs"
                         style="font-size:0; padding: 18px 36px 18px 36px; text-align: left; background-color: #ffffff">
                         <!--[if mso]>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
@@ -821,7 +853,7 @@
                 <!-- Advisor module : BEGIN -->
                 <tr>
                     <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                    <td dir="ltr" height="100%" valign="top" width="100%"
+                    <td dir="ltr" height="100%" valign="top" width="100%" class="padding-xs"
                         style="font-size:0; padding: 18px 36px 18px 36px; text-align: left; background-color: #ffffff">
                         <!--[if mso]>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
@@ -891,7 +923,7 @@
                 <!-- Text Left, Button Right : BEGIN -->
                 <tr>
                     <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-                    <td dir="rtl" height="100%" valign="top" width="100%"
+                    <td dir="rtl" height="100%" valign="top" width="100%" class="padding-xs"
                         style="font-size:0; padding: 18px 36px 36px 36px; text-align: left; background-color: #ffffff">
                         <!--[if mso]>
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
@@ -968,11 +1000,11 @@
 
         <!-- 1 Column Text : BEGIN -->
         <tr>
-            <td style="background-color: #ffffff;">
+            <td style="background-color: #ffffff;" >
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
                         <td
-                            style="padding: 36px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                            style="padding: 36px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="padding-xs">
                             <p style="margin: 0 0 10px 0;">Maecenas sed ante pellentesque, posuere leo id, eleifend
                                 dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                                 himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu
@@ -989,7 +1021,7 @@
             <td style="background-color: #f5f9ff;">
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
-                        <td style="padding: 36px;">
+                        <td style="padding: 36px;" class="padding-xs">
                             <img src="./img/hero.png" alt="" width="100%">
                             <h2>Big hero header title</h2>
                             <p style="line-height: 1.4; width: 80%;">You recently started a mortgage application, follow
@@ -1007,9 +1039,9 @@
             <td style="background-color: #006af0">
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
-                        <td style="padding: 46px; width: 100%; position: relative;">
-                            <h2 style="color: #ffffff; text-align: center; margin: 0 0 36px 0;">Invite a friend and earn
-                                £100
+                        <td style="padding: 46px; width: 100%; position: relative;" class="padding-xs">
+                            <h2 style="color: #ffffff; text-align: center; margin: 0 0 36px 0;" class="padding-xs font-xs">
+                                Invite a friend and earn £100
                             </h2>
                             <p style="color: #ffffff; font-size: 14px; text-align: center; width: 60%; margin: 0 auto 36px;"
                                 class="full-width">
@@ -1049,22 +1081,23 @@
             <td style="background-color: #19237e" height="100">
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
-                        <td style="padding: 36px; width: 100%;">
+                        <td style="padding: 36px; width: 100%;" class="padding-xs">
                             <a href="http://www.mojomortgages.com/blog" target="_blank" class="footer-link"
                                 style="color: #ffffff; font-size: 14px; text-decoration: underline; margin-right: 5%; height: 20px; padding: 10px 0; display: inline-block;">Read
                                 our blog</a>
                             <a href="http://www.mojomortgages.com/faq" target="_blank" class="footer-link"
                                 style="color: #ffffff; font-size: 14px; text-decoration: underline;">Read
                                 the FAQ</a>
-                            <div
-                                style="background-color: #ffffff; width: 36px; height: 36px; float: right; border-radius: 50%; text-align: center;">
-                            </div>
-                            <div
-                                style="background-color: #ffffff; width: 36px; height: 36px; float: right; border-radius: 50%; text-align: center; margin-right: 3%;">
-                            </div>
-                            <div
-                                style="background-color: #ffffff; width: 36px; height: 36px; float: right; border-radius: 50%; text-align: center; margin-right: 3%;">
-                            </div>
+                                <div class="social-container" style="float: right; width: 50%;">
+                                    <div style="float: right; background-color: #ffffff; width: 36px; height: 36px;  border-radius: 50%; text-align: center; ">
+                                    </div>
+                                    <div
+                                        style="float: right; background-color: #ffffff; width: 36px; height: 36px;  border-radius: 50%; text-align: center; margin-right: 3%; ">
+                                    </div>
+                                    <div
+                                        style=" float: right; background-color: #ffffff; width: 36px; height: 36px;  border-radius: 50%; text-align: center; margin-right: 3%;n ">
+                                    </div>
+                                </div>
                         </td>
                     </tr>
                 </table>
