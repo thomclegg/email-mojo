@@ -238,9 +238,9 @@
             }
         }
 
-        @media screen and (min-width: 320px) {
-            td {
-                padding: 0 16px !important;
+        @media screen and (max-width:320px) {
+            .full-width {
+                width: 100%;
             }
         }
     </style>
@@ -291,82 +291,112 @@
 
             <!-- Email Body : BEGIN -->
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-         
 
 
-            <!-- copy this into template -->
 
-           
+                <!-- copy this into template -->
 
-        <!-- Advisor module : BEGIN -->
-        <tr>
-            <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-            <td dir="ltr" height="100%" valign="top" width="100%"
-                style="font-size:0; padding: 18px 36px 18px 36px; text-align: left; background-color: #ffffff">
-                <!--[if mso]>
+
+
+                <!-- Advisor module : BEGIN -->
+                <tr>
+                    <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+                    <td dir="ltr" height="100%" valign="top" width="100%"
+                        style="font-size:0; padding: 18px 36px 18px 36px; text-align: left; background-color: #ffffff">
+                        <!--[if mso]>
                 <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
                 <tr>
                 <td valign="top" width="220" style="width: 220px;">
                 <![endif]-->
 
-                <!-- inset div styling -->
-                <div style=" display: block;
-                padding: 24px 32px;
-                background-color: #ffffff;
-                max-width: 100%;
-                border-radius: 10px;
-                border: 1px solid #eeeeee;">
-                    <!--[if mso]>
+                        <!-- inset div styling -->
+                        <div
+                            style=" display: block; overflow: hidden; padding: 24px 32px; background-color: #ffffff; max-width: 100%; border-radius: 10px; border: 1px solid #eeeeee;">
+                            <!--[if mso]>
                         </td>
                         <td valign="top" width="440" style="width: 440px;">
                     <![endif]-->
-                    <div style="display:inline-block; max-width: 100%; min-width: 80px; vertical-align:top;"
-                        class="stack-column bttm-sml">
+                            <div style="display:inline-block; max-width: 100%; min-width: 80px; vertical-align:top; margin-bottom: 16px;"
+                                class="stack-column bttm-sml">
 
-                        <div style="float: left; width: 50%; height: auto;">
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="50%"
-                                margin="0">
-                                <tr>
-                                    <td dir="ltr"
-                                        style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
-                                        class="center-on-narrow">
-                                        <img src="./img/Natwest.png" alt="Provider logo" width=120>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                                <div style="float: left; width: 45%; height: auto;" class="full-width">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="50%"
+                                        margin="0">
+                                        <tr>
+                                            <td dir="ltr"
+                                                style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
+                                                class="center-on-narrow">
+                                                <img src="./img/Natwest.png" alt="Provider logo" width=120>
 
-                        <div style="float: right; margin: 0 -1px; max-width: 50%; min-width:120px; vertical-align:top;"
-                            class="stack-column appt">
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-                                margin="0">
-                                <tr>
-                                    <td dir="ltr"
-                                        style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
-                                        class="center-on-narrow">
-                                        <p style="margin: 0; color: #555555; letter-spacing: 0; ">
-                                            Providers name
-                                        </p>
-                                        <h1 style="font-size: 3rem; font-weight: 700; margin: 0; padding:0; line-height:1.4; ">
-                                            £656
-                                        </h1>
-                                        <p style="margin: 0;">Monthly payment amount</p>
-                                        
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
 
-                        
-                    </div>
-    
-                </div>
-                <!--[if mso]>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div style="float: right;  max-width: 45%; min-width:120px; vertical-align:top;"
+                                    class="stack-column appt">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                        margin="0">
+                                        <tr>
+                                            <td dir="ltr"
+                                                style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: center;"
+                                                class="center-on-narrow">
+                                                <h2 style="margin: 0; color: #555555; letter-spacing: 0; ">
+                                                    Providers name
+                                                </h2>
+                                                <h1
+                                                    style="font-size: 3rem; font-weight: 700; margin: 0; padding:0; line-height:1.4;">
+                                                    £656
+                                                </h1>
+                                                <p style="margin: 0; ">per month</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div style="max-width: 100%; height: 100%; overflow: hidden;">
+                                <!-- Button : BEGIN -->
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                    style=" float: left; width: 45%;">
+                                    <tr>
+                                        <td dir="ltr">
+                                    <tr>
+                                        <td class="button-td button-td-primary" style="border-radius: 4px; ">
+                                            <a class="button-a button-a-primary" href="https://google.com/"
+                                                style="background: #ffffff; border: 1px solid #006af0; font-family: sans-serif; font-size: 16px; line-height: 15px; 
+                                        text-decoration: none; text-align: center; padding: 16px 32px; color: #006af0; display: block; border-radius: 10px;">
+                                                View deal
+                                            </a>
+                                        </td>
+                                    </tr>
+                </tr>
+            </table>
+            <!-- Button : END -->
+            <!-- Button : BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="float: right; width: 45%;">
+                <tr>
+                    <td dir="ltr">
+                <tr>
+                    <td class="button-td button-td-primary" style="border-radius: 4px; ">
+                        <a class="button-a button-a-primary" href="https://google.com/"
+                            style="background: #006af0; border: 1px solid #006af0; font-family: sans-serif; font-size: 16px; line-height: 15px; 
+                                        text-decoration: none; text-align: center; padding: 16px 32px; color: #ffffff; display: block; border-radius: 10px;">
+                            Get advice
+                        </a>
+                    </td>
+                </tr>
+                </tr>
+            </table>
+            <!-- Button : END -->
+        </div>
+        </div>
+        <!--[if mso]>
                     </td>
                     </tr>
                     </table>
                 <![endif]-->
-            </td>
+        </td>
         </tr>
         <!-- Advisor module : END -->
 
@@ -378,6 +408,6 @@
 
 
 
-                </table>
-                </div>
-            </body>
+        </table>
+        </div>
+</body>
