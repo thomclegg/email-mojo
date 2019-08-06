@@ -176,9 +176,8 @@
 
 
         @media screen and (max-width: 480px) {
-
-            /* What it does: Forces table cells into full-width rows. */
-            .stack-column,
+   /* What it does: Forces table cells into full-width rows. */
+   .stack-column,
             .stack-column-center {
                 display: block !important;
                 width: 100% !important;
@@ -235,6 +234,39 @@
 
             .single-break {
                 padding: 0;
+            }
+
+            a.footer-link {
+                display: block !important;
+                width: 50%;
+            }
+
+            a.footer-link:nth-child(2) {
+                margin-bottom: 24px;
+            }
+
+            .social-container {
+                display: inline-block;
+                width: 80% !important;
+                float: none !important;
+            }
+
+            .social-container div {
+                margin-right: 16px !important;
+                float: none !important;
+                display: inline-block;
+            }
+
+            .padding-xs {
+                padding: 16px !important;
+            }
+
+            .width-xs {
+                width: 50%;
+            }
+
+            .font-xs {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -295,9 +327,9 @@
             <td style="background-color: #006af0">
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
-                        <td style="padding: 46px; width: 100%; position: relative;">
-                            <h2 style="color: #ffffff; text-align: center; margin: 0 0 36px 0;">Invite a friend and earn
-                                £100
+                        <td style="padding: 46px; width: 100%; position: relative;" class="padding-xs">
+                            <h2 style="color: #ffffff; text-align: center; margin: 0 0 36px 0;" class="padding-xs font-xs">
+                                Invite a friend and earn £100
                             </h2>
                             <p style="color: #ffffff; font-size: 14px; text-align: center; width: 60%; margin: 0 auto 36px;"
                                 class="full-width">
@@ -307,7 +339,7 @@
                             </p>
 
                             <!-- Button : BEGIN -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" margin="0 auto">
                                 <tr>
                                     <td dir="ltr">
                                 <tr>
@@ -319,6 +351,8 @@
                                         </a>
                                     </td>
                                 </tr>
+                                </tr>
+                                </table>
                                 <!-- Button : END -->
                         </td>
 

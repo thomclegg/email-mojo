@@ -236,6 +236,42 @@
             .single-break {
                 padding: 0;
             }
+
+
+            a.footer-link {
+                display: block !important;
+                width: 50%;
+            }
+
+            a.footer-link:nth-child(2) {
+                margin-bottom: 24px;
+            }
+
+            .social-container {
+                display: inline-block;
+                width: 80% !important;
+                float: none !important;
+            }
+
+            .social-container div {
+                margin-right: 16px !important;
+                float: none !important;
+                display: inline-block;
+            }
+
+            .padding-xs {
+                padding: 16px !important;
+            }
+
+            .width-xs {
+                width: 50%;
+            }
+
+            .font-xs {
+                font-size: 1.8rem;
+            }
+        }
+
         }
     </style>
     <!-- Progressive Enhancements : END -->
@@ -287,25 +323,26 @@
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
                <!-- Footer styling - BEGIN -->
         <tr>
-            <td style="background-color: #19237e" height="100">
+            <td height="100">
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
-                        <td style="padding: 36px; width: 100%;">
+                        <td style="padding: 36px; width: 100%; background-color: #19237e" class="padding-xs">
                             <a href="http://www.mojomortgages.com/blog" target="_blank" class="footer-link"
                                 style="color: #ffffff; font-size: 14px; text-decoration: underline; margin-right: 5%; height: 20px; padding: 10px 0; display: inline-block;">Read
                                 our blog</a>
                             <a href="http://www.mojomortgages.com/faq" target="_blank" class="footer-link"
                                 style="color: #ffffff; font-size: 14px; text-decoration: underline;">Read
                                 the FAQ</a>
-                            <a href="https://www.facebook.com/MojoMortgagesUK" target="_blank">
-                                <img src="./img/facebook.svg" style="width: 36px; height: 36px; float: right;">
-                            </a>
-                            <a href="http://www.twitter.com/MojoMortgagesUK" target="_blank">
-                                <img src="./img/twitter.svg" style=" width: 36px; height: 36px; float: right; margin-right: 3%;">
-                            </a>
-                            <a href="http://www.linkedin.com/company/mojomortgages" target="_blank">
-                                <img src="./img/linkedIn.svg" style="width: 36px; height: 36px; float: right; margin-right: 3%;">
-                            </a>
+                                <div class="social-container" style="float: right; width: 50%;">
+                                    <div style="float: right; background-color: #ffffff; width: 36px; height: 36px;  border-radius: 50%; text-align: center; ">
+                                    </div>
+                                    <div
+                                        style="float: right; background-color: #ffffff; width: 36px; height: 36px;  border-radius: 50%; text-align: center; margin-right: 3%; ">
+                                    </div>
+                                    <div
+                                        style=" float: right; background-color: #ffffff; width: 36px; height: 36px;  border-radius: 50%; text-align: center; margin-right: 3%;n ">
+                                    </div>
+                                </div>
                         </td>
                     </tr>
                 </table>
@@ -318,8 +355,7 @@
         <!-- Email Body : END -->
 
         <!-- Email Footer : BEGIN -->
-        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="70%" align="left"
-            style="max-width: 680px; margin: 0;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="70%" align="left" style="max-width: 680px; margin: 0;">
             <tr>
                 <td
                     style="padding: 36px 0; font-family: sans-serif; font-size: 12px; line-height: 15px; text-align: left; color: #888888;">
@@ -341,6 +377,7 @@
                 </td>
             </tr>
         </table>
+        <!-- Email Footer : END -->
 
 
 

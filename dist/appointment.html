@@ -236,6 +236,39 @@
             .single-break {
                 padding: 0;
             }
+
+            a.footer-link {
+                display: block !important;
+                width: 50%;
+            }
+
+            a.footer-link:nth-child(2) {
+                margin-bottom: 24px;
+            }
+
+            .social-container {
+                display: inline-block;
+                width: 80% !important;
+                float: none !important;
+            }
+
+            .social-container div {
+                margin-right: 16px !important;
+                float: none !important;
+                display: inline-block;
+            }
+
+            .padding-xs {
+                padding: 16px !important;
+            }
+
+            .width-xs {
+                width: 50%;
+            }
+
+            .font-xs {
+                font-size: 1.8rem;
+            }
         }
     </style>
     <!-- Progressive Enhancements : END -->
@@ -290,83 +323,83 @@
 
             <!-- copy this into template -->
 
-           <!-- Appointment time : BEGIN -->
-           <tr>
-            <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-            <td dir="ltr" height="100%" valign="top" width="100%"
-                style="font-size:0; padding: 18px 36px 18px 36px; text-align: left; background-color: #ffffff">
-                <!--[if mso]>
-                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
-                <tr>
-                <td valign="top" width="220" style="width: 220px;">
-                <![endif]-->
+            <!-- Appointment time : BEGIN -->
+            <tr>
+                <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+                <td dir="ltr" height="100%" valign="top" width="100%" class="padding-xs"
+                    style="font-size:0; padding: 18px 36px 18px 36px; text-align: left; background-color: #ffffff">
+                    <!--[if mso]>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                    <tr>
+                    <td valign="top" width="220" style="width: 220px;">
+                    <![endif]-->
 
-                <!-- inset div styling -->
-                <div style=" display: block;
-                padding: 24px 32px;
-                background-color: #ffffff;
-                max-width: 100%;
-                border-radius: 10px;
-                border: 1px solid #eeeeee;">
+                    <!-- inset div styling -->
+                    <div style=" display: block;
+                    padding: 24px 32px;
+                    background-color: #ffffff;
+                    max-width: 100%;
+                    border-radius: 10px;
+                    border: 1px solid #eeeeee;">
+                        <!--[if mso]>
+                            </td>
+                            <td valign="top" width="440" style="width: 440px;">
+                        <![endif]-->
+                        <div style="display:inline-block; margin: 0; max-width: 120px; min-width: 80px; vertical-align:top;"
+                            class="stack-column bttm-sml">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                margin="0">
+                                <tr>
+                                    <td dir="ltr"
+                                        style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
+                                        class="center-on-narrow">
+                                        <h3 style="margin: 0; line-height: 2;">
+                                            THUR
+                                        </h3>
+                                        <h1 style="font-size: 46px;  font-weight: 400; margin: 0; padding:0; ">12
+                                        </h1>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div style="display:inline-block; margin: 0 -1px; max-width: 420px; min-width:120px; vertical-align:top;"
+                            class="stack-column appt">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                margin="0">
+                                <tr>
+                                    <td dir="ltr"
+                                        style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
+                                        class="center-on-narrow">
+                                        <h3 style="margin: 0 0 6px 0; color: #555555; letter-spacing: 0; ">
+                                            Your appointment is booked for:
+                                        </h3>
+                                        <h1
+                                            style="font-size: 28px; font-weight: 700; margin: 0 0 6px 0; padding:0; ">
+                                            5:00 PM on Thursday 12th June
+                                        </h1>
+                                        <a href="#"
+                                            style=" color: #006af0; border-bottom: 2px solid #006af0; padding-bottom: 1px;">+
+                                            Add to calendar</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
                     <!--[if mso]>
                         </td>
-                        <td valign="top" width="440" style="width: 440px;">
+                        </tr>
+                        </table>
                     <![endif]-->
-                    <div style="display:inline-block; margin: 0; max-width: 120px; min-width: 80px; vertical-align:top;"
-                        class="stack-column bttm-sml">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-                            margin="0">
-                            <tr>
-                                <td dir="ltr"
-                                    style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
-                                    class="center-on-narrow">
-                                    <h3 style="margin: 0; line-height: 2;">
-                                        THUR
-                                    </h3>
-                                    <h1 style="font-size: 46px;  font-weight: 400; margin: 0; padding:0; ">12
-                                    </h1>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                </td>
+            </tr>
+            <!-- Appointment time : END -->
 
-                    <div style="display:inline-block; margin: 0 -1px; max-width: 420px; min-width:120px; vertical-align:top;"
-                        class="stack-column appt">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-                            margin="0">
-                            <tr>
-                                <td dir="ltr"
-                                    style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: left;"
-                                    class="center-on-narrow">
-                                    <h3 style="margin: 0 0 6px 0; color: #555555; letter-spacing: 0; ">
-                                        Your appointment is booked for:
-                                    </h3>
-                                    <h1
-                                        style="font-size: 28px; font-weight: 700; margin: 0 0 6px 0; padding:0; ">
-                                        5:00 PM on Thursday 12th June
-                                    </h1>
-                                    <a href="#"
-                                        style=" color: #006af0; border-bottom: 2px solid #006af0; padding-bottom: 1px;">+
-                                        Add to calendar</a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                </div>
-                <!--[if mso]>
-                    </td>
-                    </tr>
-                    </table>
-                <![endif]-->
-            </td>
-        </tr>
-        <!-- Appointment time : END -->
-
-        <!-- Advisor module : BEGIN -->
-        <tr>
+         <!-- Advisor module : BEGIN -->
+         <tr>
             <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-            <td dir="ltr" height="100%" valign="top" width="100%"
+            <td dir="ltr" height="100%" valign="top" width="100%" class="padding-xs"
                 style="font-size:0; padding: 18px 36px 18px 36px; text-align: left; background-color: #ffffff">
                 <!--[if mso]>
                 <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">

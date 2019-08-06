@@ -236,6 +236,39 @@
             .single-break {
                 padding: 0;
             }
+
+            a.footer-link {
+                display: block !important;
+                width: 50%;
+            }
+
+            a.footer-link:nth-child(2) {
+                margin-bottom: 24px;
+            }
+
+            .social-container {
+                display: inline-block;
+                width: 80% !important;
+                float: none !important;
+            }
+
+            .social-container div {
+                margin-right: 16px !important;
+                float: none !important;
+                display: inline-block;
+            }
+
+            .padding-xs {
+                padding: 16px !important;
+            }
+
+            .width-xs {
+                width: 50%;
+            }
+
+            .font-xs {
+                font-size: 1.8rem;
+            }
         }
     </style>
     <!-- Progressive Enhancements : END -->
@@ -290,75 +323,75 @@
 
             <!-- copy this into template -->
 
-           <!-- Text Left, Button Right : BEGIN -->
-           <tr>
-            <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
-            <td dir="rtl" height="100%" valign="top" width="100%"
-                style="font-size:0; padding: 18px 36px 36px 36px; text-align: left; background-color: #ffffff">
-                <!--[if mso]>
-                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
-                <tr>
-                <td valign="top" width="220" style="width: 220px;">
-                <![endif]-->
+            <!-- Text Left, Button Right : BEGIN -->
+            <tr>
+                <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+                <td dir="rtl" height="100%" valign="top" width="100%" class="padding-xs"
+                    style="font-size:0; padding: 18px 36px 36px 36px; text-align: left; background-color: #ffffff">
+                    <!--[if mso]>
+                    <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                    <tr>
+                    <td valign="top" width="220" style="width: 220px;">
+                    <![endif]-->
 
-                <!-- inset div styling -->
-                <div style=" display: block;
-                padding: 24px 32px;
-                background-color: aliceblue;
-                max-width: 100%;
-                border-radius: 10px;
-                overflow: hidden;">
+                    <!-- inset div styling -->
+                    <div style=" display: block;
+                    padding: 24px 32px;
+                    background-color: aliceblue;
+                    max-width: 100%;
+                    border-radius: 10px;
+                    overflow: hidden;">
 
-                    <div style="display:inline-block; margin: 0 -1px; max-width: 260px; min-width:120px; vertical-align:top;"
-                        class="stack-column">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td dir="ltr"
-                                    style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left;"
-                                    class="center-on-narrow">
-                                    <h2
-                                        style="font-family: sans-serif; font-size: 18px; color: #333333; font-weight: 400;">
-                                        Can't make your appointment?
-                                    </h2>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                        <div style="display:inline-block; margin: 0 -1px; max-width: 260px; min-width:120px; vertical-align:top;"
+                            class="stack-column">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td dir="ltr"
+                                        style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left;"
+                                        class="center-on-narrow">
+                                        <h2
+                                            style="font-family: sans-serif; font-size: 18px; color: #333333; font-weight: 400;">
+                                            Can't make your appointment?
+                                        </h2>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
 
-                    <div style="display:inline-block; margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%; float: right;"
-                        class="stack-column">
-                        <!-- Button : BEGIN -->
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td dir="rtl">
-                            <tr>
-                                <td class="button-td button-td-primary" style="border-radius: 4px; ">
-                                    <a class="button-a button-a-primary" href="https://google.com/"
-                                        style="background: #ffffff; border: 1px solid #006af0; font-family: sans-serif; font-size: 16px; line-height: 15px; 
-                                                text-decoration: none; text-align: center; padding: 16px 32px; color: #006af0; display: block; border-radius: 10px;">
-                                        Reschedule here</a>
-                                </td>
-                            </tr>
-                            <!-- Button : END -->
-            </td>
+                        <div style="margin: 0 -1px; max-width: 220px; min-width:160px; vertical-align:top; width:100%; float: right;"
+                            class="stack-column">
+                            <!-- Button : BEGIN -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td dir="rtl">
+                                <tr>
+                                    <td class="button-td button-td-primary" style="border-radius: 4px; ">
+                                        <a class="button-a button-a-primary" href="https://google.com/"
+                                            style="background: #ffffff; border: 1px solid #006af0; font-family: sans-serif; font-size: 16px; line-height: 15px; 
+                                                    text-decoration: none; text-align: center; padding: 16px 32px; color: #006af0; display: block; border-radius: 10px;">
+                                            Reschedule here</a>
+                                    </td>
+                                </tr>
+                                <!-- Button : END -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+    <!--[if mso]>
+                    </td>
+                    <td valign="top" width="440" style="width: 440px;">
+                    <![endif]-->
+    </div>
+    <!--[if mso]>
+        </td>
         </tr>
-    </table>
-</div>
-
-
-<!--[if mso]>
-                </td>
-                <td valign="top" width="440" style="width: 440px;">
-                <![endif]-->
-</div>
-<!--[if mso]>
+        </table>
+    <![endif]-->
     </td>
     </tr>
-    </table>
-<![endif]-->
-</td>
-</tr>
-<!-- Text Left, Button Right : END -->
+    <!-- Text Left, Button Right : END -->
 
 
 
