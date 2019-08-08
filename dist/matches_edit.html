@@ -1,0 +1,160 @@
+<!-- Start AMPScript Loop
+%%[
+var @MatchSetRS, @MatchSetId, @MatchRS, @OppId, @MatchRowCount, @MatchNum
+set @OppId = Opportunity:Id
+set @MatchSetRS = LookupOrderedRows("Matches__c_Salesforce",1,"CreatedDate Desc","Opportunity__c",@OppId)
+set @MatchSetId = Field(Row(@MatchSetRs,1),"Id")
+
+set @MatchRS = LookupOrderedRows("Matches__c_Salesforce",0,"CreatedDate Desc","Match_Set__c",@MatchSetId)
+set @MatchRowCount = RowCount(@MatchRS)
+FOR @MatchNum = 1 TO @MatchRowCount DO 
+  var @MatchRow, @MatchName, @ProductName, @ProviderName, @InitialMonthlyRepayment, @InitialMonthlyRate, @ProviderLogo
+  set @MatchRow = Row(@MatchRS,@MatchNum)
+  set @MatchName = Field(@MatchRow,"Name")
+  set @ProductName = Field(@MatchRow,"Product_Name__c")
+  set @ProviderName = Field(@MatchRow,"Provider_Name__c")
+  set @InitialMonthlyRepayment = Field(@MatchRow,"Initial_Monthly_Payment__c")
+  set @InitialMonthlyRate = Field(@MatchRow,"Initial_Monthly_Rate__c")
+  set @ProviderLogo = Field(@MatchRow,"Provider_Logo_URL__c")
+]%%
+-->
+<br>
+ <!-- copy this into template -->
+
+
+
+                <!-- Advisor module : BEGIN -->
+              <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+            &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+
+        <!-- Preview Text Spacing Hack : END -->
+
+        <!--
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 680px.
+            2. MSO tags for Desktop Windows Outlook enforce a 680px width.
+            Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.
+        -->
+        <div style="max-width: 680px; margin: 0 auto;" class="email-container">
+            <!--[if mso]>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="680">
+            <tr>
+            <td>
+            <![endif]-->
+
+            <!-- Email Body : BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+
+
+
+                <!-- copy this into template -->
+
+
+
+                <!-- Advisor module : BEGIN -->
+                <tr>
+                    <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+                    <td dir="ltr" height="100%" valign="top" width="100%" style="font-size:0; padding: 1px 10px 5px 10px; text-align: left; background-color: #ffffff">
+                        <!--[if mso]>
+                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="660" style="width: 660px;">
+                <tr>
+                <td valign="top" width="220" style="width: 220px;">
+                <![endif]-->
+
+                        <!-- inset div styling -->
+                        <div style=" display: block; overflow: hidden; padding: 24px 32px; background-color: #ffffff; max-width: 100%; border-radius: 10px; border: 1px solid #eeeeee;">
+                            <!--[if mso]>
+                        </td>
+                        <td valign="top" width="440" style="width: 440px;">
+                    <![endif]-->
+                            <div style="display:inline-block; max-width: 100%; min-width: 80px; vertical-align:top; margin-bottom: 16px;" class="stack-column bttm-sml">
+
+                                <div style="float: left; width: 48%; height: auto;" class="full-width clear">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="50%" margin="0" style="table-layout: unset !important;">
+                                      
+                                        <tr>
+                                            <td dir="ltr" style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: center;">                                                <h2 style="margin:0; color: #006AF0; letter-spacing: 0;"><u>
+                                                    %%=v(@MatchName)=%%</u>
+                                                </h2>
+                                                <img style="padding: 16px 50px" src="%%=v(@ProviderLogo)=%%" alt="Provider logo" width="120">
+
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <div style="float: right;  max-width: 48%; min-width:120px; vertical-align:top;" class="stack-column appt clear mb-24-xs">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" margin="0">
+                                        <tr>
+                                            <td dir="ltr" style="font-family: sans-serif; font-size: 15px; color: #555555; text-align: center;">
+                                                <h2 style="margin: 0; color: #555555; letter-spacing: 0; ">
+                                                    %%=v(@ProviderName)=%%
+                                                </h2>
+                                                <h2 style="font-size: 2rem; font-weight: 700; margin: 0; padding: 16px; line-height:1.4;">
+                                                    £%%=v(@InitialMonthlyRepayment)=%%
+                                                </h2>
+                                                <p style="margin: 0px; ">per month</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div style="max-width: 100%; height: 100%;">
+                                <!-- Button : BEGIN -->
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style=" float: left; width: 45%;" class="full-width mb-24-xs">
+                                    <tr>
+                                        <td dir="ltr">
+                                    </td></tr><tr>
+                                        <td class="button-td button-td-primary" style="border-radius: 4px; ">
+                                            <a class="button-a button-a-primary" href="
+https://my.mojomortgages.com/auth/login?utm_source=CRM&amp;utm_medium=Email&amp;utm_campaign=MatchesReminder" style="background: #ffffff; border: 1px solid #006af0; font-family: sans-serif; font-size: 16px; line-height: 15px; 
+                                        text-decoration: none; text-align: center; margin: 5px ; padding: 16px 32px; color: #006af0; display: block; border-radius: 10px;">
+                                                View deal
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                                <!-- Button : END -->
+                                <!-- Button : BEGIN -->
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="float: right; width: 45%;" class="full-width">
+                                    <tr>
+                                        <td dir="ltr">
+                                    </td></tr><tr>
+                                        <td class="button-td button-td-primary" style="border-radius: 4px; ">
+                                            <a class="button-a button-a-primary" href="https://calendly.com/nuvo/mortgage-appointment/?utm_source=CRM&utm_medium=Email&utm_campaign=MatchesReminder&utm_content=%%Opportunity:Customer_ID__c%%" style="background: #006af0; border: 1px solid #006af0; font-family: sans-serif; font-size: 16px; line-height: 15px; 
+                                                            text-decoration: none; text-align: center; margin: 5px; padding: 16px 32px; color: #ffffff; display: block; border-radius: 10px;">
+                                                Get advice
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                                <!-- Button : END -->
+        </div>
+        </div>
+        <!--[if mso]>
+                    </td>
+                    </tr>
+                    </table>
+                <![endif]-->
+        </td>
+        </tr>
+        <!-- Advisor module : END -->
+
+
+
+
+
+
+
+
+
+        </table>
+        </div><!-- End AMPScript Loop
+%%[
+NEXT @MatchNum
+]%%
+--&gt;</h2></td></tr></table></div></div></div></td></tr></table></div></div></div>-->
